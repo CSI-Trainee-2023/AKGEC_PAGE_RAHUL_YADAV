@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 } */
 c{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 header {
     text-align:center;
@@ -26,16 +26,16 @@ body{
 }
 #akgec{
     padding:40px;
-    color:black;
+    color:rgb(255, 253, 253);
     font-size: 40px;
 
 }
 #upper{
-    background-image: url('https://th.bing.com/th/id/OIP.grwDjAU5i0p-Lv4K6l8zYgAAAA?w=248&h=127&c=7&r=0&o=5&dpr=1.5&pid=1.7'); 
+    background-image: url('./assets/front.png'); 
     background-color :rgb(255, 255, 255); 
     background-repeat: no-repeat;
-    width:100%;
-    opacity: 1;
+    width:90%;
+    /* opacity: 1; */
     background-size: cover;
     height:300px;
 }
@@ -58,6 +58,7 @@ body{
     text-align: center;
     padding: 20px 130px;
     text-decoration: none;
+    /* text-shadow: #760606; */
   }
   
   li a:hover {
@@ -66,8 +67,8 @@ body{
   div.scroll-container {
     padding-top: 10px;
     background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
+    /* overflow: auto; 
+     white-space: nowrap;  */
     padding: 10px;
   }
   
@@ -80,6 +81,11 @@ body{
     display: flex;
     flex-direction: row;
     /* justify-content: ; */
+    border: rgb(7, 7, 7) solid;
+    border-width: 0.4rem;
+     border-left: 0rem;
+    border-right: 0rem;
+    border-bottom: 0rem;
     align-items: center;
   }
   #mainHeadImg{
@@ -148,6 +154,8 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: sticky;
+    top: 0;
     background-color: #333;
   }
   
@@ -164,7 +172,7 @@ body{
   }
   
   li a:hover, .department:hover .dropbtn {
-    background-color: yellowgreen;
+    background-color: rgb(222, 219, 16);
   }
   
   li.department {
@@ -228,6 +236,233 @@ body{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+
     cursor: pointer;
-    background-color: blue;
+    background-color: rgb(0, 110, 255);
  }
+
+ .under{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #ffffffe2;
+  /* color: #000000; */
+ }
+ .featuredImg1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: none;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #ffffffe2;
+  /* color: #000000; */
+ }
+ .overAll{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+    align-items: center;
+    justify-content: none;
+    background-color: #ffffffe2;
+    border: yellow solid;
+    border-width: 0.4rem;
+     border-left: 0rem;
+    border-right: 0rem;
+    /* border-bottom: rem;  */
+    /* color: #000000; */
+ }
+ .row2{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: none;
+    background-color: #fbf9f9e2;
+    border: rgb(124, 121, 121) solid;
+    border-width: 0.1rem;
+    width: 99%;
+     /* border-left: 0rem;
+    border-right: 0rem;
+    border-bottom: 0rem; */
+    /* color: #000000; */
+ }
+ .row1{
+  border: rgb(124, 121, 121) solid;
+    border-width: 0.1rem;
+     /* border-left: 0rem;
+    border-right: 0rem;*/
+    width: 99%;
+    border-bottom: 0rem; 
+ }
+ .ourFeaturdCorses{
+    font-size: x-large;
+    padding-bottom: 2%;
+    text-decoration-line: underline ;
+ }
+ .color{
+  color: #000000;
+ }
+ .color6{
+  color: #000000;
+  padding-left: 2%;
+  padding-right: 18%;
+ }
+ .color7{
+  color: #000000;
+  padding-left: 2%;
+  padding-right: 20%;
+ }
+ .color8{
+  color: #000000;
+  padding-left: 2%;
+  padding-right: 20%;
+ }
+
+ .Our{
+  color: #000000;
+ }
+ .blank{
+  display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding-top: 7%;
+    border: rgb(35, 33, 33) solid;
+    border-width: 0.4rem;
+     border-left: 0rem;
+    border-right: 0rem;
+    border-bottom: 1rem;
+    padding-bottom: 7%;
+    z-index: 1;
+    clear: both;
+  
+    
+ }
+ .box{
+  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* clear: both; */
+    /* padding-left; */
+    /* background-color: #fbf9f9e2; */
+    /* opacity: 0.3; */
+ }
+ /* .miniBox{
+   margin-left: 15%; 
+  margin-right: 15%;
+ } */
+ .color3{
+  color: #000000;
+ }
+ .color2{
+  color:yellow;
+  font-size: x-large;
+  /* padding-top: -6%; */
+  font-weight: bolder;
+ }
+.backImg{
+  position: fixed;
+  width: 100vh;
+  height: 100vw;
+  z-index: -1;
+}
+#lastDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: yellow solid;
+    border-width: 0.4rem;
+     border-left: 0rem;
+    border-right: 0rem;
+    border-top: 0rem;
+  justify-content: space-evenly;
+
+}
+.firstHead{
+  display: flex;
+  flex-direction: column;
+  padding-right: 7%;
+  align-items: center;
+  padding-left: 2%;
+  justify-content: space-between;
+}
+.secoundHead{
+  display: flex;
+  flex-direction: column;
+  padding-right: 2%;
+  align-items: center;
+  justify-content: space-between;
+}
+.headImg2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading1{
+  color: #000000;
+  font-size: x-large;
+  font-weight: bolder;
+  padding-bottom: 8%;
+  padding-top: 4%;
+}
+.headCount2{
+  color: #000000;
+  text-align: center;
+}
+.headCont1{
+  color: #000000;
+  font-size: large;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 2%;
+  font-weight: bold;
+}
+.imgPad{
+  padding-bottom: 8%;
+  padding-top: 12%;
+}
+.imgPad2{
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+.scroll-container{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.centerText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.centerHead{
+  font-size: xx-large;
+  font-weight: bolder;
+  background-color: #111;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  margin-bottom: 2%;
+  color: #d1c604;
+}
+.cnterContent{
+  font-size: x-large;
+  font-weight: bold;
+  text-align: start;
+  color: #f1f1f1;
+}
+.symbolPad{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.home{
+  margin-right: 1%;
+}
