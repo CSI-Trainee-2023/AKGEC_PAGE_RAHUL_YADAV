@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJAY KUMAR GARG ENGINEERING COLLEGE (akgec)</title>
     <link rel="stylesheet" href="style.css"> 
-    
+    <!-- comments, casing, naming, spacing, responsive, design, visibility, grid, alignment, color, feature improve, innovation,  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function scrollContainerImg() {
+              setInterval(displayNextImage, 1000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "https://www.akgec.ac.in/wp-content/uploads/2019/12/PMMODIvisit.jpg";
+          images[1] = "https://www.akgec.ac.in/wp-content/uploads/2020/07/slider-2.png";
+          images[2] = "https://www.akgec.ac.in/wp-content/uploads/2019/08/slider1-1.jpg";
+          images[3] = "https://www.akgec.ac.in/wp-content/uploads/2022/11/ratings-Copy.png";
+          images[4] = "https://www.akgec.ac.in/wp-content/uploads/2023/05/NAAC-Banner.png";
+    </script> -->
 </head>
 <body>
     <header>
         <ul>
-            <li><a class="active" href="index.html"><i class="fa-solid fa-house-chimney fa-beat-fade" style="color: #dade0d;"></i>HOME</a></li>
-        
+            <li><a class="active" href="index.html">HOME</a></li>
+            <!-- "><i class="fa-solid fa-house-chimney fa-beat-fade" style="color: #dade0d;"></i> -->
         <li class="Department">
             <a href="" class="dropbtn">DEPARTMENT</a>
             <div class="Department-content">
@@ -65,9 +88,48 @@
         
     </header>
 
-    <section>
-            <div class="scroll-container">
-                <img src="assets\akgec.png" alt="Cinque Terre" width="1200" height="400">
+    <!-- <section onload="scrollContainerImg()"> -->
+    <div class="slideShowStat"> 
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <div class="slide first">
+                    <img src="https://www.akgec.ac.in/wp-content/uploads/2019/12/PMMODIvisit.jpg" class="imagesSlide" alt="Img1" height="506" width="1280" >
+                </div>
+                <div class="slide">
+                    <img src="https://www.akgec.ac.in/wp-content/uploads/2020/07/slider-2.png" class="imagesSlide"alt="Img1"height="506" width="1280"  >
+                </div>
+                <div class="slide">
+                    <img src="https://www.akgec.ac.in/wp-content/uploads/2019/08/slider1-1.jpg" class="imagesSlide"alt="Img1" height="506" width="1280" >
+                </div>
+                <div class="slide">
+                    <img src="https://www.akgec.ac.in/wp-content/uploads/2022/11/ratings-Copy.png" class="imagesSlide"alt="Img1" height="506" width="1280" >
+                </div>
+                <div class="slide">
+                    <img src="https://www.akgec.ac.in/wp-content/uploads/2023/05/NAAC-Banner.png" class="imagesSlide"alt="Img1"height="506" width="1280" >
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
+            <!-- <div class="scroll-container">
+                <img src="assets\akgec.png" alt="Cinque Terre" width="1330" height="460">
                 <div class="centerText">
                     <div class="centerHead">
                         Quality Education
@@ -76,8 +138,22 @@
                         education. Together with us, you will have deeper knowledge of the
                         subjects important for your future profession.</div>
                 </div>
-              </div>
-    </section>
+              </div> -->
+              <!-- <div onload="scrollContainerImg()"> -->
+                <!-- <img id="Imagess" src="https://www.akgec.ac.in/wp-content/uploads/2019/08/slider1-1.jpg"> -->
+              <!-- </div> -->
+
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter>5){
+                counter=1;
+            }
+        },5000);
+    </script>
+    </div>
     <section>
         <div id="About">
             <h4 id="hFour">
@@ -88,7 +164,7 @@
                     <img src="https://www.akgec.ac.in/wp-content/uploads/2019/08/home-about.jpg">
                 </div>
                 <div class="content">
-                    <a>    
+                    <a class="contentText">    
                     The college was established in 1998 and offers B.Tech Courses in seven disciplines of Engineering.
                     The college also offers M.Tech in Automationand Robotics, Electronics & Communication Engineering, Computer Science, Electrical and Electronics Engineering and Mechanical Engineering.
                     </a>
@@ -160,41 +236,98 @@
 
             </div>
         </div>
-        <div class="backImg">
-            <img src="assets\akgec.png" alt="not found">
-        </div>
+        <!-- <div class="backImg">
+            <img src="assets/akgec.png" alt="not found">
+        </div> -->
         <div class="blank">
-            
+            <div class="backImg">
+                <img src="assets/akgec.png"  class="Image2"alt="not found">
+            </div>
             <div class="content1">
-                <p class="color">
+                <p class="colorText">
                     The college has been consistently maintaining excellent academic results and placements. The college has the distinction of being the first and only college in UP to receive the Acedemic Excellence Award for the Best Engineering College in UPTU from H.E. the Governor of UP for two successive years.
                 </p>
             </div>
             <div class="box">
                 <div class="miniBox">
-                    <p class="color2">
-                        2000+
+                    <div class="counting">
+                    <p id="color2">
                     </p ><br>
+                    <p class="plusSign">
+                        +
+                    </p>
+                </div>
                     <p class="color3">STUDENTS PLACED
                         (2021-22)</p>
                 </div>
                 <div class="miniBox">
-                    <p class="color2">
-                        213+
+                    <div class="counting">
+                    <p  id="colorTwoCount">
+                        
                     </p><br>
+                    <p class="plusSign">
+                        +
+                    </p>
+                    </div>
+                    <div> 
                     <p class="color3">STUDENTS IN UNIV.
                         MERIT LIST</p>
+                    </div>    
                 </div>
                 <div class="miniBox">
-                    <p class="color2">
-                        19K+
+                    <div class="counting"> 
+                    <p id="colorThreeCount">
+                        
                     </p><br>
+                    <p class="plusSign">
+                        K+
+                    </p>
+                </div>
                     <p class="color3">STUDENTS
                         GRADUATED</p>
                 </div>
 
             </div>
         </div>
+
+
+        <script>
+            var box1=setInterval(projectDoneOne,0)
+            var box2=setInterval(projectDoneTwo,5)
+            var box3=setInterval(projectDoneThree,10)
+
+            let count1=1;
+            let count2=1;
+            let count3=1;
+
+            function projectDoneOne(){
+                
+                let count=document.getElementById("color2");
+                count.innerHTML=++count1;
+                if(count1==1000){
+                    clearInterval(box1)
+                }
+            }
+            function projectDoneTwo(){
+                
+                let count=document.getElementById("colorTwoCount");
+                count.innerHTML=++count2;
+                if(count2==130){
+                    clearInterval(box2)
+                }
+            }
+            function projectDoneThree(){
+                
+                let count=document.getElementById("colorThreeCount");
+                count.innerHTML=++count3;
+                if(count3==19){
+                    clearInterval(box3)
+                }
+            }
+        </script>
+
+
+
     </section>
     <section id="lastDiv">
         <div class="firstHead"> 
@@ -209,7 +342,7 @@
             <div class="firstDiv">
                 <p class="heading1">Achievements</p>
             </div>
-            <div class="headImg1">
+            <div class="headImage">
                 <img src="https://www.akgec.ac.in/wp-content/uploads/2023/05/NAAC-poster.png" alt="headimg1" width="343" height="495">
             </div>
         </div>
@@ -230,10 +363,11 @@
         <div class="leftOne">
             <div class="left1">
                 <div class="symbolPad"> 
-                <i class="fa-solid fa-location-pin" style="color: #f0e800;"></i>
+                    <i class="fa-solid fa-location-dot fa-beat" style="color: #d4cd08;"></i>
+                <!-- <i class="fa-solid fa-location-pin" style="color: #f0e800;"></i> -->
                 </div>
-                <div>
-                <a>27th Km Milestone,<br>
+                <div class="footerText">
+                <a >27th Km Milestone,<br>
                         Delhi-Meerut Expressway,<br>
                         P.O. Adhyatmik Nagar,<br>
                         Ghaziabad - 201009</a><br>
@@ -241,19 +375,21 @@
             </div>
             <div class="left2">
                 <div class="symbolPad">
-                <i class="fa-solid fa-phone-flip" style="color: #fff700;"></i>
+                <!-- <i class="fa-solid fa-phone-flip" style="color: #fff700;"></i> -->
+                <i class="fa-solid fa-phone fa-shake" style="color: #eaed0c;"></i>
                 </div>
-                <div>
-                <a> 8744052891-93<br>
+                <div class="footerText">
+                <a > 8744052891-93<br>
                 7290034978 <br>
                 Admissions Enquiry: 1800-200-0777</a>
                 </div>
             </div>
             <div class="left3">
                 <div class="symbolPad">
-                <i class="fa-solid fa-envelope" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-envelope fa-bounce" style="color: #e7e11d;"></i>
+                <!-- <i class="fa-solid fa-envelope" style="color: #fbff00;"></i> -->
                 </div>
-                <div>
+                <div class="footerText">
                 <a>
                     info@akgec.ac.in
                 </a>
@@ -261,24 +397,25 @@
             </div>
         </div>
         <div class="middleOne">
-            <h2>Quick Links :</h2>
+            <h2 class="h2Footer">Quick Links :</h2>
             <ul class="middle">
-                <li>AKGIM-MBA Admission</li><br>
-                <li>AKGIM-MBA</li><br>
-                <li>AICTE Approval Letters</li><br>
-                <li>NIRF Data for Ranking 2023</li><br>
-                <li>Mandatory Disclosure</li><br>
-                <li>Open Educational Resources (OER)</li><br>
-                <li>Online Reporting of Ragging Cases</li><br>
-                <li>Grievance Committee</li><br>
-                <li>Internal Complaints Committee</li><br>
+                <li><i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i>
+                    AKGIM-MBA Admission</li><br>
+                <li><i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i>AKGIM-MBA</li><br>
+                <li><i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i> AICTE Approval Letters</li><br>
+                <li> <i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i>NIRF Data for Ranking 2023</li><br>
+                <li><i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i> Mandatory Disclosure</li><br>
+                <li> <i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i>Open Educational Resources (OER)</li><br>
+                <li> <i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i>Online Reporting of Ragging Cases</li><br>
+                <li> <i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i>Grievance Committee</li><br>
+                <li> <i class="fa-solid fa-square fa-beat-fade fa-2xs" style="color: #fafafa;"></i>   Internal Complaints Committee</li><br>
             </ul>
         </div>
         <div class="rightOne">
             <h3>About AKGEC</h3>
-            <p>
+            <div class="aboutText">
                 Ajay Kumar Garg Engineering College (AKGEC) offers four year under graduate B.Tech course in ten engineering branches, two year post graduate M.Tech course in four engineering branches and two year post graduate MCA course.
-            </p>
+            </div>
 
         </div>
     </div>

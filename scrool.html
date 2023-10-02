@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+    <link rel="stylesheet" href="scrool.css">
+      <!-- <title>change picture</title>
+      <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 1000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "assets/akgec.png";
+          images[1] = "assets/front.png";
+          images[2] = "assets/front.png";
+      </script>
+   </head>
+
+   <body >
+
+   <div onload = "startTimer()">
+       <img id="img" src="assets/akgec.png"/> -->
+       <!-- <button type="button" onclick="displayPreviousImage()">Previous</button> -->
+       <!-- <button type="button" onclick="displayNextImage()">Next</button> -->
+       <!-- </div> -->
+       <!-- <div id="imgGallary" class="container">
+        <img src="image/lake-louise-51543_960_720.jpg" />
+        <img src="image/snow-in-pine-tree-1265118__340.jpg" />
+        <img src="image/winter-385640_960_720.jpg"/> -->
+    <!-- </div> -->
+    </head>
+    <body> 
+    <div class="w3-container">
+        <h2>Slideshow Indicators</h2>
+        <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+      </div>
+      
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <!-- <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_snow_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%"> -->
+        <img class="mySlides" src="assets/akgec.png" style="width:100%">
+        <img class="mySlides" src="assets/front.png" style="width:100%">
+        <img class="mySlides" src="assets/front.png" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-white";
+      }
+      </script>
+   </body>
+</html>

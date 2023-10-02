@@ -1,0 +1,17 @@
+/* .container{
+    position:relative;
+    width:600px;
+    height:330px;
+    border-radius:5px;
+    border:4px solid black;
+    overflow:hidden;
+    margin-left:320px;
+}
+#imgGallary > img
+{ 
+width:700px;
+height:330px;
+} */
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
